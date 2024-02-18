@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('../fonts/Gilroy-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'Merriweather-Black';
+  src: url('../fonts/Merriweather-Black.ttf');
+}
+
+body {
+  background-color: #191411;
+  font-family: 'Gilroy-Semibold', sans-serif;
+  color: #fff;
+  user-select: none;
+}
+
+.main {
+  background-image: url('../images/main_bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  overflow: hidden;
+}
+
+.header {
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  vertical-align: bottom;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  max-width: 600px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-list a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 88px;
+}
+
+.currency {
+  border: 1px solid #fff;
+  min-width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency:hover {
+  cursor: pointer;
+}
+
+.main-content {
+  padding-top: 103px;
+  padding-bottom: 148px;
+}
+
+.main-info {
+  margin: 0;
+  max-width: 608px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-small-info {
+  width: 143px;
+  height: 48px;
+  background-color: #D3320F;
+  font-size: 18px;
+  border-radius: 100px;
+  padding: 12px 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 120px;
+  font-family: 'Merriweather-Black', sans-serif;
+  margin-bottom: 56px;
+}
+
+.main-text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+}
+
+.main-info .button {
+  width: 260px;
+  height: 62px;
+  background: linear-gradient(135.00deg, rgb(218, 128, 35), rgb(226, 180, 56) 100%);
+  ;
+  border-radius: 8px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  color: #191411;
+}
+
+.main-info .button:hover {
+  background: linear-gradient(135.00deg, #ac6115, #9e7a19 100%);
+}
+
+.main-image {
+  position: absolute;
+  top: -180px;
+  left: calc(100% - 990px);
+  overflow: hidden;
+  z-index: 0;
+}
