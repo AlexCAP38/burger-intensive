@@ -20,6 +20,14 @@ body {
   user-select: none;
 }
 
+
+.common-title {
+  font-size: 64px;
+  font-family: 'Merriweather-Black', sans-serif;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
 .main {
   background-image: url('../images/main_bg.png');
   background-repeat: no-repeat;
@@ -126,11 +134,11 @@ body {
   margin-bottom: 56px;
 }
 
-.main-info .button {
+.button {
   width: 260px;
   height: 62px;
   background: linear-gradient(135.00deg, rgb(218, 128, 35), rgb(226, 180, 56) 100%);
-  ;
+  font-family: 'Gilroy-Semibold', sans-serif;
   border-radius: 8px;
   border: 0;
   font-size: 18px;
@@ -140,7 +148,7 @@ body {
   color: #191411;
 }
 
-.main-info .button:hover {
+.button:hover {
   background: linear-gradient(135.00deg, #ac6115, #9e7a19 100%);
 }
 
@@ -150,4 +158,217 @@ body {
   left: calc(100% - 990px);
   overflow: hidden;
   z-index: 0;
+}
+
+.why {
+  background-image: url('../images/whybg.png');
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: top center;
+  padding-bottom: 180px;
+}
+
+.why .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-items {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.why-item {
+  max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-item-image {
+  max-width: 100px;
+}
+
+.why-item-title {
+  font-size: 24px;
+  margin-top: 24px;
+  line-height: 29px;
+}
+
+.why-item-description {
+  margin-top: 24px;
+  font-size: 16px;
+  max-width: 302px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.products {
+  background-image: url(../images/burgers_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1400px;
+  padding-bottom: 180px;
+}
+
+.products .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-items {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 24px;
+}
+
+.products-item {
+  padding: 30px;
+  max-width: 384px;
+  border-radius: 16px;
+  border: 1px solid rgb(53, 53, 53);
+  background: rgb(33, 26, 22);
+}
+
+.products-item-image {
+  max-width: 324px;
+}
+
+.products-item-title {
+  margin-top: 24px;
+  line-height: 29px;
+}
+
+.products-item-description {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.products-item-extra {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.products-item-info {
+  /* max-width: 49px; */
+}
+
+.products-item-price {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  text-align: left;
+}
+
+.products-item-weight {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(117, 117, 117);
+}
+
+.products-button {
+  max-width: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-button span:first-of-type {
+  margin-right: 11px;
+}
+
+.order {
+  background-image: url(../images/order_bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: initial;
+  overflow: hidden;
+}
+
+.order .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 180px;
+}
+
+.order-info {
+  margin-top: 60px;
+  z-index: 1;
+  position: relative;
+}
+
+.order-image {
+  position: absolute;
+  top: -150px;
+  left: -280px;
+  z-index: -1;
+}
+
+.order-form {
+  box-sizing: border-box;
+  max-width: 424px;
+  border-radius: 16px;
+  padding: 60px 40px;
+  border: 1px solid rgb(53, 53, 53);
+  background: rgb(33, 26, 22);
+  margin-left: 674px;
+}
+
+.order-text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.order-form-imputs {
+  margin-top: 40px;
+}
+
+.order-form-input {
+  box-sizing: border-box;
+  width: 344px;
+  height: 62px;
+  border-radius: 8px;
+  background: linear-gradient(135.00deg, rgb(218, 128, 35), rgb(226, 180, 56));
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-form-input input {
+  box-sizing: border-box;
+  width: 342px;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Gilroy-Semibold', sans-serif;
+  background: rgb(33, 26, 22);
+  color: #fff;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.order-button {
+  width: 344px;
+  height: 62px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-text {
+  line-height: 20px;
 }
