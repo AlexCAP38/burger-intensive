@@ -17,9 +17,9 @@
         </div>
         <nav class="menu">
           <ul class="menu-list">
-            <li class="menu-item"><a href="#">Почему у нас</a></li>
-            <li class="menu-item"><a href="#">Меню бургеров</a></li>
-            <li class="menu-item"><a href="#">Оформление заказа</a></li>
+            <li class="menu-item"><a data-link="why">Почему у нас</a></li>
+            <li class="menu-item"><a data-link="products">Меню бургеров</a></li>
+            <li class="menu-item"><a data-link="order">Оформление заказа</a></li>
           </ul>
         </nav>
         <div class="currency" title="Изменить валюту">$</div>
@@ -34,13 +34,13 @@
             Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом наших бургеров.
             Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
           </p>
-          <button class="button">Смотреть меню</button>
+          <button class="button" id="main-button">Смотреть меню</button>
         </div>
         <img src="./images/main_burger.png" alt="Big burger" class="main-image">
       </div>
     </section>
   </section>
-  <section class="why">
+  <section class="why" id="why">
     <div class="container">
       <h2 class="why-title common-title">почему нас выбирают?</h2>
       <div class="why-items">
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section class="products">
+  <section class="products" id="products">
     <div class="container">
       <h2 class="products-title common-title">выберите свой бургер</h2>
       <div class="products-items">
@@ -338,7 +338,7 @@
       </div>
     </div>
   </section>
-  <section class="order">
+  <section class="order" id="order">
     <div class="container">
       <h2 class="order-title common-title">оформление заказа</h2>
       <div class="order-info">
@@ -348,13 +348,13 @@
           </p>
           <div class="order-form-imputs">
             <div class="order-form-input">
-              <input type="text" placeholder="Ваш заказ">
+              <input type="text" id="inpt_order" placeholder="Ваш заказ">
             </div>
             <div class="order-form-input">
-              <input type="text" placeholder="Ваше имя">
+              <input type="text" id="inpt_name" placeholder="Ваше имя">
             </div>
             <div class="order-form-input">
-              <input type="tel" placeholder="Ваш телефон">
+              <input type="tel" id="input_tel" placeholder="Ваш телефон">
             </div>
             <button class="button order-button">Оформить заказ</button>
           </div>
@@ -371,7 +371,7 @@
       <p class="footer-text">Все права защищены</p>
     </div>
   </footer>
-  <script src="./styles/style.css"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
